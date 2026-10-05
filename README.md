@@ -101,6 +101,13 @@ Six checks, each against a closed-form answer:
 | `energy` | Free-flight energy spread < 1e-3 relative, before any contact |
 | `solver` | `stack(4)` and `tumble` integrate with zero rejected steps and worst constraint violation < 1e-7 |
 
+Two focused diagnostics go further:
+
+```bash
+python check_impact.py    # exits non-zero if worst relative error > 5%
+python check_rolling.py
+```
+
 ## Scenes
 
 All scenes live in `scenes.SCENES`:
