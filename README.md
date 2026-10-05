@@ -3,6 +3,7 @@
 **V**ariational **i**ntegrators for planar multibody systems with frictional **contact**.
 
 `vicontact` simulates 2D convex rigid bodies (boxes, polygons, n-gons) that collide, slide, roll and stack under gravity. Each timestep is a small nonlinear program solved with **IPOPT** (via **CasADi**): a discrete Euler-Lagrange equation for the dynamics, plus complementarity conditions for non-penetration and Coulomb friction. Results can be rendered to a polished MP4 with a tracking camera, energy plot and contact-impulse overlay.
+
 [![Cascade Simulation Demo](https://img.youtube.com/vi/7Z9DUAu6hnU/maxresdefault.jpg)](https://youtu.be/7Z9DUAu6hnU)
 ## Highlights
 
