@@ -3,7 +3,7 @@
 **V**ariational **i**ntegrators for planar multibody systems with frictional **contact**.
 
 `vicontact` simulates 2D convex rigid bodies (boxes, polygons, n-gons) that collide, slide, roll and stack under gravity. Each timestep is a small nonlinear program solved with **IPOPT** (via **CasADi**): a discrete Euler-Lagrange equation for the dynamics, plus complementarity conditions for non-penetration and Coulomb friction. Results can be rendered to a polished MP4 with a tracking camera, energy plot and contact-impulse overlay.
-
+[Domino Cascade Demo](/out/cascade.mp4)
 ## Highlights
 
 - **Variational integrator.** A midpoint discrete Lagrangian `Ld(q1, q2) = h L((q1+q2)/2, (q2-q1)/h)` is differentiated symbolically, and every step enforces the forced discrete Euler-Lagrange equation
