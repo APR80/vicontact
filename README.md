@@ -158,7 +158,3 @@ Bodies must be **convex**. Poses are `(x, y, theta)`; `v0` is the initial `(vx, 
 | `comp_tol` | `1e-5` | Max complementarity residual for an accepted step |
 | `feas_tol` | `1e-8` | Max constraint violation for an accepted step |
 | `cache_limit` | `800` | Max cached solvers (one per contact topology) |
-
-## Diagnostics
-
-Every `Recording` stores per-step kinetic and potential energy, contact count, complementarity / DEL / feasibility residuals, a rejected-step flag, plus contact points and normal/tangential forces. `rec.meta` summarises the run: wall time, solvers built, retries, worst residuals and the first rejected steps.
