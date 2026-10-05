@@ -4,8 +4,13 @@
 
 `vicontact` simulates 2D convex rigid bodies (boxes, polygons, n-gons) that collide, slide, roll and stack under gravity. Each timestep is a small nonlinear program solved with **IPOPT** (via **CasADi**): a discrete Euler-Lagrange equation for the dynamics, plus complementarity conditions for non-penetration and Coulomb friction. Results can be rendered to a polished MP4 with a tracking camera, energy plot and contact-impulse overlay.
 
-[![Cascade Simulation Demo](https://img.youtube.com/vi/7Z9DUAu6hnU/maxresdefault.jpg)](https://youtu.be/7Z9DUAu6hnU)
-## Highlights
+<p align="center">
+  <a href="https://youtu.be/7Z9DUAu6hnU">
+    <img src="https://img.youtube.com/vi/7Z9DUAu6hnU/maxresdefault.jpg" alt="Project Demo" width="75%">
+    <br>
+    <sub><b>Project Demo</b></sub>
+  </a>
+</p>## Highlights
 
 - **Variational integrator.** A midpoint discrete Lagrangian `Ld(q1, q2) = h L((q1+q2)/2, (q2-q1)/h)` is differentiated symbolically, and every step enforces the forced discrete Euler-Lagrange equation
   `D2 Ld(q[k-1], q[k]) + D1 Ld(q[k], q[k+1]) + h * sum_c J_c^T lambda_c = 0`.
