@@ -11,8 +11,8 @@
     <sub><b>Project Demo</b></sub>
   </a>
 </p>
-## Highlights
 
+## Highlights
 - **Variational integrator.** A midpoint discrete Lagrangian `Ld(q1, q2) = h L((q1+q2)/2, (q2-q1)/h)` is differentiated symbolically, and every step enforces the forced discrete Euler-Lagrange equation
   `D2 Ld(q[k-1], q[k]) + D1 Ld(q[k], q[k+1]) + h * sum_c J_c^T lambda_c = 0`.
 - **Stewart-Trinkle friction.** Coulomb friction in linear complementarity form (no `sign()` smoothing), which behaves much better with many simultaneous contacts.
